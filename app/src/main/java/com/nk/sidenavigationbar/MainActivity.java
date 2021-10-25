@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //
 //        setSupportActionBar(toolbar);
 
-        navigationView.bringToFront();
+        navigationView.bringToFront(); //show what was pushed, and stay
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.nav_open, R.string.nav_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
