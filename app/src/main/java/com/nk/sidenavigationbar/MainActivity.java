@@ -1,6 +1,5 @@
 package com.nk.sidenavigationbar;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
@@ -65,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     // catch wich button you pushed in the menu
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+    public boolean onNavigationItemSelected(MenuItem item) {
         Toast.makeText(getBaseContext(), item.getTitle(), Toast.LENGTH_SHORT).show();
         return true;
     }
